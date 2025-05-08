@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Bookworm</string>
+    <string name="browse_books">Browse Books</string>
+    <string name="my_list">My List</string>
+    <string name="add_to_list">Add to List</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="added">Added to the list</string>
+    <string name="reminder_set">Reminder Set</string>
+    <string name="overdue">There are overdue books</string>
+
 </resources>
