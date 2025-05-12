@@ -13,10 +13,8 @@ public class LibraryStore {
     public final List<Book> myList    = new ArrayList<>();
 
     private LibraryStore() {
-        catalog.add(new Book("Clean Code", "Robert C. Martin",
-                R.color.black));
-        catalog.add(new Book("The Pragmatic Programmer",
-                "Hunt & Thomas", R.color.black));
+        catalog.add(new Book("The Master and Margarita", "Mikhail Bulgakov", R.drawable.cover2));
+        catalog.add(new Book("The Hitchhiker's Guide to the Galaxy", "Douglas Adams", R.drawable.cover1));
         // … add 8-10 total
     }
 }
