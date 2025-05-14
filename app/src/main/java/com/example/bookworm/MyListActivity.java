@@ -1,5 +1,6 @@
 package com.example.bookworm;
-
+// Partner 1: סופיה קריבוביאז - 330480781
+// Partner 2: תומר כץ - 322770520
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.widget.ListView;
@@ -11,19 +12,23 @@ import java.time.LocalDate;
 
 public class MyListActivity extends AppCompatActivity {
 
+    // Runs when an activity is first created
     @Override protected void onCreate(Bundle s) {
         super.onCreate(s);
         setContentView(R.layout.activity_my_list);
 
+        // 1. Get the listview from xml
         ListView lv = findViewById(R.id.my_books_lv);
 
+        // 2. Create the adapter in my-list mode (true)
         BookAdapter ad = new BookAdapter(
                 this,
-                LibraryStore.get().myList,
-                this::openDatePicker,
-                true);
+                LibraryStore.get().myList, // the books the user added
+                this::openDatePicker,   // what to do when the button is pressed
+                true); // listmode = true
         lv.setAdapter(ad);
 
+        // 3. Check for overdue books
         checkOverdue();
     }
 
@@ -40,7 +45,10 @@ public class MyListActivity extends AppCompatActivity {
                 today.getYear(), today.getMonthValue() - 1, today.getDayOfMonth());
         dlg.show();
     }
-
+    /**
+     * If at least one book’s due date is earlier than today
+     * we warn the user with a long Toast.
+     */
     private void checkOverdue() {
         LocalDate now = LocalDate.now();
         boolean late = false;

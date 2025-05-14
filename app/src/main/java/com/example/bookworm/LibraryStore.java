@@ -1,5 +1,6 @@
 package com.example.bookworm;
-
+// Partner 1: סופיה קריבוביאז - 330480781
+// Partner 2: תומר כץ - 322770520
 import java.util.ArrayList;
 import java.util.List;
 
