@@ -6,13 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BrowseBooksActivity">
-
+    <!--We ue this one for BrowseBooksActivity -->
     <ListView
         android:id="@+id/books_lv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="16dp">
-
+        <!--Added a little margin so it's not glued to the top -->
     </ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--Displays the full catalog of books :) -->
